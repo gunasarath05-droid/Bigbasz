@@ -18,7 +18,6 @@ const protect = async (req, res, next) => {
       if (!req.user) {
         return res.status(404).json({ message: "User not found" });
       }
-console.log(token,"checkout token");
       next();
     } catch (error) {
       console.error(error);
