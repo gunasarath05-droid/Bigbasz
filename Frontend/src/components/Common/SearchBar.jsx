@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchProductByFilter, setFilters } from '../../redux/slices/productSlice';
 
-const Searchbar = () => {
+const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [isOpen, setIsOpen] = useState(false);
     const dispatch = useDispatch()
@@ -64,4 +64,4 @@ const Searchbar = () => {
     )
 }
 
-export default Searchbar
+export default SearchBar

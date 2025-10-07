@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiBars3BottomLeft, HiOutlineShoppingBag, HiOutlineUser } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
-import Searchbar from './Searchbar';
+import SearchBar from './SearchBar'
 import CartDrawer from '../Layout/CartDrawer';
 import { IoMdClose } from 'react-icons/io';
 import { useSelector } from 'react-redux';
@@ -62,7 +62,7 @@ const Navbar = () => {
                         )}
                     </button>
                     <div className="overflow-hidden">
-                        <Searchbar />
+                        <SearchBar/>
                     </div>
 
                     <button onClick={toggleNavDrawer} className="md:hidden" aria-label="Toggle Navigation Drawer">
